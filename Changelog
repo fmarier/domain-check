@@ -1,0 +1,18 @@
+1.5: (2007-03-09)
+	* Updated the license to allow redistribution and modification
+
+1.4:
+	* Updated the documentation.
+
+1.3:
+	* Gracefully Handle the case where the expiration data is
+	unavailable
+
+1.2:
+	* Added "-s" option to allow arbitrary registrars
+
+1.1:
+	* Fixed issue with 'e' getopt string -- Pedro Alves
+
+1.0:
+	* Initial Release
