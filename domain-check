@@ -116,8 +116,8 @@ ALARM="FALSE"
 WHOIS_SERVER="whois.internic.org"
 
 # Location of system binaries
-AWK="/bin/awk"
-WHOIS="/bin/whois"
+AWK="/usr/bin/awk"
+WHOIS="/usr/bin/whois"
 DATE="/bin/date"
 
 # Place to stash temporary files
