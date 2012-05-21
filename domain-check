@@ -51,7 +51,7 @@ WHOIS="/usr/bin/whois"
 DATE="/bin/date"
 
 # Place to stash temporary files
-WHOIS_TMP="/var/tmp/whois.$$"
+WHOIS_TMP="`mktemp`"
 
 #############################################################################
 # Purpose: Convert a date from MONTH-DAY-YEAR to Julian format
