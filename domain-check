@@ -53,6 +53,12 @@ DATE="/bin/date"
 # Place to stash temporary files
 WHOIS_TMP="`mktemp`"
 
+errorexit()
+{
+    rm -f ${WHOIS_TMP}
+    exit 1
+}
+
 #############################################################################
 # Purpose: Convert a date from MONTH-DAY-YEAR to Julian format
 # Acknowledgements: Code was adapted from examples in the book
@@ -261,7 +267,7 @@ do
                 q) QUIET="TRUE";;
                 x) WARNDAYS=$OPTARG;;
                 \?) usage
-                    exit 1;;
+                    errorexit;;
         esac
 done
 
@@ -270,7 +276,7 @@ if [ ! -f ${WHOIS} ]
 then
         echo "ERROR: The whois binary does not exist in ${WHOIS} ."
         echo "  FIX: Please modify the \$WHOIS variable in the program header."
-        exit 1
+        errorexit
 fi
 
 ### Check to make sure a date utility is available
@@ -278,7 +284,7 @@ if [ ! -f ${DATE} ]
 then
         echo "ERROR: The date binary does not exist in ${DATE} ."
         echo "  FIX: Please modify the \$DATE variable in the program header."
-        exit 1
+        errorexit
 fi
 
 ### Baseline the dates so we have something to compare to
@@ -309,7 +315,7 @@ then
 ### There was an error, so print a detailed usage message and exit
 else
         usage
-        exit 1
+        errorexit
 fi
 
 # Add an extra newline
