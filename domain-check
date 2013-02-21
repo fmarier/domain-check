@@ -43,7 +43,7 @@ QUIET="FALSE"
 ALARM="FALSE"
 
 # Whois server to use (cmdline: -s)
-WHOIS_SERVER="whois.internic.org"
+WHOIS_SERVER="whois.internic.org" //??? for .ru zone (expl: allstr.ru)
 
 # Location of system binaries
 AWK="/usr/bin/awk"
