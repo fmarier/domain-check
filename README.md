@@ -59,8 +59,9 @@ your registrar and/or TLD.**
 
 # License
 
-Copyright (C) 2012 Francois Marier <francois@fmarier.org>
-              2007 Matty <matty91 at gmail dot com>
+    Copyright (C) 2012 Francois Marier <francois@fmarier.org>
+                  2007 Matty <matty91 at gmail dot com>
+
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation; either version 3 of the License, or
